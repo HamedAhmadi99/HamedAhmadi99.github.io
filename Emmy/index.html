@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Battle for the Emmy: An Inside Look at 2024's Top Drama Contenders</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-rendering: optimizeLegibility;
+        }
+
+        .content {
+            max-width: 640px;
+            margin: auto;
+            padding: 0 1em;
+        }
+
+        .header {
+            position: relative;
+            padding: 3em 1em;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            background: url('https://assets.fxnetworks.com/cms-next/production/5c657598-17d7-4714-9f25-c83d8bf4627a.jpg') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity here */
+        }
+
+        .header h1,
+        .header p,
+        .header .credit {
+            position: relative;
+            z-index: 1;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+
+        .header h1 {
+            font-family: 'Lora', Georgia, serif;
+            font-weight: bold;
+            font-size: 2.5em;
+            line-height: 1.1;
+            margin-bottom: 0.5em;
+        }
+
+        .subhead {
+            font-family: 'Lora', Georgia, serif;
+            font-size: 1.2em;
+        }
+
+        .credit {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 0.8em;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        a {
+            color: #f05349;
+        }
+
+        .footer {
+            background: #f4f4f4;
+            text-align: center;
+            font-size: 0.8em;
+            margin-top: 4em;
+            padding: 4em 0;
+        }
+
+        figure {
+            margin: 0;
+            padding-bottom: 1.2em;
+        }
+
+        figcaption {
+            font-size: 0.8em;
+            text-align: center;
+            margin-top: 0.5em;
+            color: #666;
+        }
+
+        iframe,
+        img,
+        video {
+            max-width: 100%;
+        }
+
+        p {
+            line-height: 1.6;
+            margin: 0;
+            padding-bottom: 1.2em;
+        }
+
+        ul {
+            margin: 0;
+            padding-bottom: 1em;
+            line-height: 1.6;
+        }
+
+        iframe {
+            padding-bottom: 1.2em;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            background: #fffbaf;
+            font-size: 0.85em;
+        }
+
+        .full-width figure {
+            text-align: center;
+        }
+
+        /* margin on mobile */
+        @media (max-width: 640px) {
+            body {
+                font-size: 18px;
+            }
+
+            .content {
+                padding-left: 0.5em;
+                padding-right: 0.5em;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .subhead {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Who Will Take Home the Emmy? Ranking the Best Drama Series of 2024</h1>
+        <p class="subhead">From the regal corridors of Buckingham Palace to the treacherous, mutant-filled wastelands, this year's Emmy nominations for Best Drama Series promise a rollercoaster of emotions. As the battle for the Emmy heats up, we analyze the ratings from IMDb, Metacritic, and Rotten Tomatoes to predict which drama will take center stage.</p>
+        <div class="credit">Image Credit: FX Networks</div>
+    </div>
+    <div class="content">
+        <div class="byline">
+            <p>By Hamed Ahmadi</p>
+        </div>
+        <p>Let’s meet our eight star-studded nominees. The regal drama "The Crown" continues its reign with its sixth season, delving deeper into the complexities of the British monarchy. "Fallout," a post-apocalyptic thrill ride, makes a strong debut, while "The Gilded Age" dazzles with a look at America's upper crust in its second season. "The Morning Show" pulls back the curtain on morning TV drama in its third outing, and "Mr. and Mrs. Smith" brings an action-packed spy romance reboot to the small screen. "Shōgun" offers an epic tale of feudal Japan, "Slow Horses" delivers gritty spy drama in its third season, and "3 Body Problem" promises a mind-bending sci-fi saga.</p>
+
+        <p>To predict the winner, we gathered ratings from three major platforms: IMDb, Metacritic, and Rotten Tomatoes. Each of these platforms offers a unique perspective—IMDb with its user-generated ratings, Metacritic combining critic and audience scores, and Rotten Tomatoes providing a percentage of positive reviews. Here's how we did it:</p>
+
+        <p>For IMDb, we converted ratings from a 10-point scale to a 100-point scale. Metacritic provided both critic and audience scores, with the audience score adjusted from a 10-point to a 100-point scale. Rotten Tomatoes scores, already in percentage form, fit perfectly into our analysis.</p>
+
+        <p>We didn't stop at just one method of analysis. To ensure our findings were robust, we employed two approaches: direct normalization and z-score normalization. Direct normalization involved converting all ratings to a common scale (0-100) and calculating a weighted average. Z-score normalization standardized the ratings to account for the distribution of each rating source.</p>
+
+        <h2>The Big Reveal</h2>
+        <p>Our analysis unveiled some interesting insights. When converting everything to a 0-100 scale, shows like "Slow Horses" and "Shōgun" emerged as clear frontrunners. The gritty spy drama "Slow Horses" kept viewers on the edge of their seats. As critic John Anderson from <a href="https://www.wsj.com/arts-culture/television/slow-horses-season-3-review-a-stable-of-spies-returns-apple-tv-gary-oldman-kristin-scott-thomas-saskia-reeves-bbee1503">Wall Street Journal</a> puts it, "Slow Horses has thus far found its success doling out memorable characters and tightly coiled plotlines in equal proportions." Meanwhile, the lush visuals and gripping storyline of "Shōgun" won both critical and audience acclaim. "Fallout," with its intense narrative and stunning visuals, also scored highly, making it a strong contender.</p>
+
+        <iframe title="Emmy Face-Off: Top 2024 Drama Rankings" aria-label="Split Bars" id="datawrapper-chart-UuSgf" src="https://datawrapper.dwcdn.net/UuSgf/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="397" data-external="1"></iframe>
+        <script type="text/javascript">
+            !function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+        </script>
+
+        <p>Using z-scores to level the playing field confirmed our initial findings. Both methods pointed to the same top three contenders: "Slow Horses," "Shōgun," and "Fallout." This consistency underscores the reliability of our analysis.</p>
+
+        <iframe title="Emmy Drama Showdown: Z-score Rankings" aria-label="Dot Plot" id="datawrapper-chart-qXKw4" src="https://datawrapper.dwcdn.net/qXKw4/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="320" data-external="1"></iframe>
+        <script type="text/javascript">
+            !function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+        </script>
+
+        <h2>Why It Matters</h2>
+        <p>Analyzing ratings isn't just about predicting a winner; it's about understanding what resonates with both critics and audiences. Shows like "Slow Horses" and "Shōgun" excel because they offer compelling stories, rich characters, and high production values—elements that both critics and viewers appreciate. On the other hand, "The Morning Show," despite its star-studded cast, didn't fare as well, highlighting that even big names can't guarantee top ratings.</p>
+
+        <p>Interestingly, "3 Body Problem" had more balanced scores, appealing equally to both critics and viewers. This suggests a broader appeal, even if it didn't top the charts.</p>
+
+        <h2>Behind the Ratings</h2>
+        <p>Diving deeper into the data, we found that "Slow Horses" scored an impressive 98% from Rotten Tomatoes critics and a 95% from audiences. This show has clearly struck a chord with viewers, combining strong performances with tight plotting. "Shōgun," with its near-perfect 99% critic score and an impressive 91% audience score, also received high praise. Critic Alison Herman from <a href="https://variety.com/2024/tv/tv-reviews/shogun-review-fx-game-of-thrones-1235920586/">Variety</a> notes, "There are superficial similarities to “Game of Thrones” — five contenders for an empty throne, a storyline about two girlhood friends on opposite sides of a power struggle. But it’s this focus on people that truly unites the two series, and qualifies “Shōgun” to take up the mantle of thrillingly transportive event TV."</p>
+
+        <p>"Fallout," a newcomer, impressed with a 94% critic score and a 90% audience score on Rotten Tomatoes, demonstrating that it has made a significant impact right out of the gate. One IMDb user, Supermanfan, described it as "one of the best video game adaptations ever," highlighting Walton Goggins' standout performance. Read the full review <a href="https://www.imdb.com/title/tt12637874/reviews?sort=curated&dir=desc&ratingFilter=0">here</a>. Meanwhile, "The Crown" and "The Gilded Age" maintained solid scores, reflecting their consistent quality and loyal fanbases.</p>
+
+        <figure>
+            <img src="https://assets.aboutamazon.com/e9/d6/98f81c7342478cf97989121db820/about-amazon-feature-archive01-falloutuniverse-fallout-s1-059-140-vx003-00086434.jpg" alt="Fallout Scene">
+            <figcaption>Scene from 'Fallout'. Image Credit: Amazon Studios</figcaption>
+        </figure>
+
+        <h2>The Road to the Emmys</h2>
+        <p>While the actual Emmy winners are decided by the Television Academy, our data-driven predictions give a sneak peek into what makes a show stand out. Whether you’re rooting for the royal drama of "The Crown" or the sci-fi thrills of "Fallout," one thing’s for sure: 2024 is a stellar year for TV drama.</p>
+
+        <p>Our analysis shows that both critics and audiences have a significant influence on a show's success. High production values, strong storytelling, and compelling characters are key ingredients in winning both hearts and awards.</p>
+
+        <p>So, who do you think will win? Tune in to the Emmys and see if our predictions hit the mark. Until then, keep binge-watching!</p>
+    </div>
+    <div class="footer">
+        <div class="content">
+            <p>Created with data from IMDb, Metacritic, and Rotten Tomatoes.</p>
+        </div>
+    </div>
+</body>
+
+</html>
